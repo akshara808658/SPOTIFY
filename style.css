@@ -214,20 +214,23 @@ html,body{
 .footer-one{
     display: flex;
     flex-flow: column wrap;
-    margin-top: 2px;
+    /* margin-top: 2px; */
 }
 .footer-a{
     margin-bottom: 32px;
 }
-.footer-a h1{
+.footer-b{
+  margin-bottom: 32px;  
+}
+.footer-a h1  , .footer-b h1{
     color: rgb(255, 255, 255);
     margin-block: 0px;
     font-size: 1rem;
     font-weight: 700;
-    font-family: medium;
+    font-family: bold;
 
 }
-.footer-a ul{
+.footer-a ul, .footer-b ul{
       padding-inline-start: 0px;
     /* padding-inline: 32px 0px; */
     margin-block: 0px;
@@ -236,13 +239,13 @@ html,body{
     display: block;
     list-style: none;
 }
-.footer-a li{
+.footer-a li , .footer-b li{
     text-decoration: none;
     color: #b3b3b3;
     font-weight: 400;
-    font-family: medium;
+    font-family: light;
     font-size: 1rem;
-    margin: 11px 0px;
+    margin: 8px 0px;
     width: fit-content;
     /* padding-block-end: 8px; */
     text-transform: none;
@@ -266,12 +269,12 @@ html,body{
     color: #b3b3b3;
 }
 .horizontal-ruler{
-    border-radius: rgb(255, 255, 255);
-    margin-block-start: 0px;
+    border-radius: rgba(255, 255, 255, 0.1);
     border: 0px;
     border-block-start: 1px solid #292929;
-    margin-block: 20px;
+    margin-block: 24px;
     z-index: 1;
+    margin-block-start: 0px;
 }
 .bottom{
     display: flex;
@@ -283,7 +286,7 @@ html,body{
     display: flex;
     flex-flow: wrap;
     flex-wrap: wrap;
-    padding-left: 16px;
+    /* padding-left: 16px; */
 }
 .copy-right{
     flex: 0 0 auto;
@@ -291,10 +294,18 @@ html,body{
     flex-flow: row;
     align-items: end;
     color: #b3b3b3;
+    /* height: 20px; */
+}
+.copyy{
+    position: relative;
+    top: 2px;
 }
 .english{
-    padding-top: 16px;
-    padding-left: 16px;
+    padding-top: 24px;
+    position: relative;
+    bottom: 4px;
+    /* padding-left: 16px; */
+    /* padding-bottom: 68px; */
 }
 .about-ads{
     margin-right: 16px;
@@ -307,9 +318,6 @@ html,body{
     font-family: medium;
     color: #b3b3b3;
 }
-.copyy{
-    padding-left: 16px;
-}
 .eng-btn{
     padding-inline-start: 34px;
     background-color: transparent;
@@ -321,6 +329,8 @@ html,body{
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    width: 97.64px;
+    height: 32px;
 }
 .eng-btn img{
     inset-inline-start: 12px;
@@ -335,5 +345,117 @@ html,body{
     min-block-size: 32px;
     padding-block: 4px;
     inset-inline-start: 12px;
+    padding-left: 1px;
+    display: flex;
+    align-items: center;
+}
+.coma{
+    display: block;
+   /* height: 22px;  */
+    width: 100%;
+    z-index: 1;
+    color:white;
+}
+/**/
+@media screen and (min-width:768px) {
+    .footer{
+        margin-top: 30px;
+    }
+    .main-footer{
+        margin-top: -30px;
+    }
+    .footer-one{
+        flex-direction: row;
+    }
+    .footer-a, .footer-b{
+        width: 40%;
+        margin-right: 24px;
+        margin-bottom: 32px;
+    }
+    .footer-two{
+        margin-bottom: 38px;
+    }
+    .bottom{
+       position: relative;
+       bottom: -2px;
+    }
+    .copy-right{
+        padding-top: 2px;
+    }
+}
+@media screen and (min-width:992px) {
+    .footer{
+        margin-top: 22px;
+    }
+    .footerr{
+        flex-direction: row;
+    }
+    .footer-one{
+        flex: 1 1 50%;
+        padding-bottom: 0px;
+        margin-top: 10px;
+        position: relative;
+        bottom: 2px;
+    }
+    .footer-a , .footer-b{
+        width: 152px;
+        margin-bottom: 18px;
+        margin-right: 27px;
+    }
+    .footer-two{
+        margin-bottom: 40px;
+        margin-right: -16px;
+        padding-top: 8px;
+    }
+    .main-footer{
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    .bottom{
+        flex-flow: row;
+        align-items: start;
+        bottom: 4px;
+    }
+    .english{
+        display: none;
+    }
+    .horizontal-ruler{
+        border-color: rgba(255, 255, 255, 0.1);
+        border: 0px;
+        border-block-start: 1px solid #292929;
+        margin-block: 20px, 24px;
+        z-index: 1;
+        position: relative;
+        bottom: 8px;
+    }
+    .horizontal-ruler{
+        border-color: rgba(255,255,255,0.1);
+        border: 0px;
+        border-block-start: 1px solid #292929;
+        margin-block: 20px;
+    }
+    .copyy{
+        padding-right: 16px;
+    }
+    .copy-right{
+        position: relative;
+        bottom: 6px;
+    }
+    .copyy p{
+        font-family: light;
+    }
+    .english{
+        display: none;
+    }
+    .horizontal-ruler{
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 0px;
+        border-block-start: 1px solid #292929;
+        margin-block: 20px;
+    }
+    .copyy{
+        display: flex;
+        flex-direction: column;  
+    }
 }
 /**/
