@@ -41,7 +41,6 @@ html,body{
 }
 .spotify-logo{
     display: flex;
-    height: 32px;
     width: 24px;
 }
 .logo{
@@ -439,7 +438,7 @@ html,body{
     }
     .copy-right{
         position: relative;
-        bottom: 6px;
+        bottom: 8px;
     }
     .copyy p{
         font-family: light;
